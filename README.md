@@ -1,1 +1,1 @@
-MathaMethod
+MathMethod
