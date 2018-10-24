@@ -23,7 +23,11 @@ class MathMethod
        }
     public static void main (String[]args)
        {
-         int x=0;int fx=0;int y=0;int gxy=0;int hx=0;
+         int x = 0; 
+         int fx = 0; 
+         int y = 0;
+         int gxy = 0;
+         int hx = 0;
          getFunctions(x,fx,y,gxy,hx);
        }
 }
