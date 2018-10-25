@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class MathMethod
 {  
-    public static void getFunctions(int x,int fx,int y,int gxy,int hx)
+    public static void getF(int x,int fx)
        { 
          Scanner sc = new Scanner(System.in);
          Scanner sb = new Scanner(System.in);
@@ -10,11 +10,20 @@ class MathMethod
          fx = x+5;
          System.out.print("f(x) = "+fx);
          System.out.println();
+       }
+     public static void getG(int x,int fx,int y,int gxy)
+       {
+         Scanner sd = new Scanner(System.in);
+         fx = x+5;
          System.out.print("Enter y = ");
-         y = sc.nextInt();
+         y = sd.nextInt();
          gxy = x+y;
          System.out.print("g(x) = "+gxy);
          System.out.println();
+       }
+      public static void getH(int x,int fx,int hx)
+       {
+         Scanner st = new Scanner(System.in);
          fx = x+5;
          hx=x+fx;
          System.out.println();
@@ -28,6 +37,8 @@ class MathMethod
          int y = 0;
          int gxy = 0;
          int hx = 0;
-         getFunctions(x,fx,y,gxy,hx);
+         getF(x,fx);
+         getG( x,fx,y,gxy);
+         getH( x,fx,hx);
        }
 }
